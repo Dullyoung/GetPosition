@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.getposition"
+ >
+
+
+    <!-- 悬浮窗所需权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme2" >
+        <activity
+            android:name="com.example.getposition.tool.demo.MainActivity"
+            android:theme="@style/AppTheme2"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 注册当前悬浮窗服务 -->
+        <service
+            android:name=".tool.service.FloatService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name=".tool.screen.GetClickPostion"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme2" />
+
+        <!-- android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" -->
+
+    </application>
+
+</manifest>
