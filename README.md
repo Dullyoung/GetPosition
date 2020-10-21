@@ -2,7 +2,8 @@
 # apk 下载链接
 https://raw.githubusercontent.com/Dullyoung/GetPosition/main/app/release/%E5%9D%90%E6%A0%87%E9%80%89%E5%8F%96.apk
 # 使用方法
- - 下载坐标获取apk 下载 adb 下载 脚本.bat
+### 要用到手机和电脑 手机打开开发者模式，usb连接到电脑,不会的自己百度
+ - 下载 坐标获取.apk 安装到手机上 下载adb.exe和脚本.bat到电脑上
  - 打开apk按照提示获取你要点击的坐标点
  - 把脚本.bat用记事本打开 
  - choice /t 3 /d y /n >nul 延时3秒
